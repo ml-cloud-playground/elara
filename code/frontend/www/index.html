@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+    <script src="js/square.js"></script>
+    <title>Match Nonprofits with Customers: Experiment</title>
+</head>
+
+<body>
+    <!-- <h1>elaras</h1> -->
+    <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">Electronics</a></li>
+            <li><a href="#" class="nav-link px-2">Home Goods</a></li>
+            <li><a href="#" class="nav-link px-2">Produce</a></li>
+            <li><a href="#" class="nav-link px-2">Services</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+    </header>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/watch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watch - $199.00</h5>
+                        <p class="card-text">Stay connected and in style with our sleek and smart watch!</p>
+                        <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/earphone.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bluetooth headphone - 99$</h5>
+                            <p class="card-text">Affordable Bluetooth headphones, delivering
+                                crystal-clear sound anytime, anywhere.</p>
+                            <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/aloa.jpg" class="card-img-top" id="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vibrant Aloa Plant - <span id="price">$29</span></h5>
+                            <p class="card-text">Experience the beauty of nature with our vibrant Aloe Plant - a
+                                refreshing addition to any space!</p>
+                            <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/camera.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera</h5>
+                        <p class="card-text">Capture timeless moments with our vintage camera - a classic gem for
+                            photography enthusiasts.</p>
+                        <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/cleaning.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cleaning Supplies</h5>
+                            <p class="card-text">Clean with ease using our efficient and affordable cleaning
+                                supplies.</p>
+                            <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/oil.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pineapple spread</h5>
+                            <p class="card-text">No stirring tropical pineapple spread. Just add bread!</p>
+                            <a href="#" class="btn btn-primary" onclick="viewProduct(event)">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="productDetail" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text"></p>
+
+                    <p class="modal-img"></p>
+                    <div>
+                        <form id="payment-form">
+                            <div id="card-container"></div>
+                        </form>
+                    </div>
+                    Support <span class="non-profit-matched"></p> with your purchase.
+                        <div class="btn-group" role="group" aria-label="donation">
+                            <button type="button" class="btn btn-group-sm btn-secondary">$1</button>
+                            <button type="button" class="btn btn-group-sm btn-secondary">$5</button>
+                            <button type="button" class="btn btn-group-sm btn-secondary">$10</button>
+                        </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Purchase</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
